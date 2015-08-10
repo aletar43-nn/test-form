@@ -14,9 +14,20 @@ abstract class  ACore {
         mysql_query('SET NAMES "UTF8"');
     }
 
-    public function get_body(){
-        echo 'Hello World!';
+
+
+    protected function get_form(){ // вывод формы (шапки)
+        require_once ('h_form.php');
+
     }
+
+    public function get_body(){     // метод вывода новостей
+        $this->get_form();
+        $this->get_news();
+    }
+
+    abstract function get_news();
 }
+
 
 ?>
