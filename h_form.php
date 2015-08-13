@@ -1,5 +1,5 @@
 <?php
-require_once ('classes/reg_form.php');
+require_once ('classes/reg_form.php');  // Подключение скрипта записи в БД
 ?>
 <!DOCTYPE html>
 <html>
